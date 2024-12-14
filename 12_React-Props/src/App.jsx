@@ -14,7 +14,7 @@ function App() {
     Age : "20",
     Class : "12th"
   }
-  const [count,setCount]= useState("")
+  const [count,setCount]= useState("karan")
   return(
     <>
     <h1>Props in array</h1>
@@ -25,6 +25,7 @@ function App() {
     {
      count && <Student Name = {count}/>
     }
+    <button onClick={()=>{setCount("khola")}}>Update student name</button>
     </>
   )
   
