@@ -1,6 +1,8 @@
+import {useState } from "react";
 import College from "./Arry";
 import Oobj from "./Obj";
 import User from "./User";
+import Student from "./Student";
 
 function App() {
   const collegeName = ['mdu','sgt','amity']
@@ -12,6 +14,7 @@ function App() {
     Age : "20",
     Class : "12th"
   }
+  const [count,setCount]= useState("")
   return(
     <>
     <h1>Props in array</h1>
@@ -19,6 +22,9 @@ function App() {
     <User Name = 'KHOLA' age ={20} emailId={'wwwkhola.com'}/>
     <User Name={Name} age={age} emailId={emailId}/>
     <Oobj new1 = {Obj1}/>
+    {
+     count && <Student Name = {count}/>
+    }
     </>
   )
   
