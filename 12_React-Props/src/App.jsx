@@ -1,52 +1,25 @@
-import { useState } from 'react'
-import User from './User'
-import College from './College'
-import Student from './Student'
-
+import College from "./Arry";
+import Oobj from "./Obj";
+import User from "./User";
 
 function App() {
-//  let name = "Sahil"
-//  let age = 21;
-//  let email = "sahil@gmail.com"
-
-let userObj = {
-  name : 'Sahil khola',
-  age : 20,
-  email : 'sahilkhola2004@gmail.com'
-}
-let userObj2 = {
-  name : 'karan',
-  age : 19,
-  email : 'karan2004@gmail.com'
-}
-let userObj3 = {
-  name : 'Sourav',
-  age : 22,
-  email : 'bhupati@gmail.com'
-}
-
-let collegeName = ['MDU','DU','NIT','LET']
-const [student,setStudent]= useState("sam")
-  return (
-   <>
-   <h1>Props in React js</h1>
-   <hr />
-   {/* <h2>{name}</h2> */}
-   {/* <User name = "Sahil" age= {20} email = "khola@gmail.com"/> */}
-   {/* <User name = {name} age= {age} email = {email}/> */}
-   <User user={userObj}/>
-   <hr />
-   <User user={userObj2}/>
-   <hr />
-   <User user={userObj3}/>
-   <hr />
-   <College name = {collegeName}/>
-   <hr />
-   <Student name="Sahil" />
-   <hr />
-   <Student name={student} />
-   </>
+  const collegeName = ['mdu','sgt','amity']
+  let Name = "Sahil khola"
+  let age = 20;
+  let emailId = 'khola@gmail.com'
+  const Obj1 = {
+    Name : 'Rao shabh',
+    Age : "20",
+    Class : "12th"
+  }
+  return(
+    <>
+    <h1>Props in array</h1>
+    <College AllName = {collegeName}/>
+    <User Name = 'KHOLA' age ={20} emailId={'wwwkhola.com'}/>
+    <User Name={Name} age={age} emailId={emailId}/>
+    <Oobj new1 = {Obj1}/>
+    </>
   )
-}
-
-export default App
+  
+}export default App;

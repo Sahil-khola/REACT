@@ -1,12 +1,10 @@
-// function User({name,age,email}) {
-function User({user}) {
-    
+function User({Name,age,emailId}) {
     return(
         <>
-        <h1>Name : {user.name}</h1>
-        <h1>Age : {user.age}</h1>
-        <h1>Email : {user.email}</h1>
+        <h1> Name: {Name}</h1>
+        <h1> Age: {age}</h1>
+        <h1> email : {emailId}</h1>
         </>
     )
 }
-export default User;
+export default User
