@@ -1,82 +1,97 @@
+import { use } from "react";
+
 function App() {
-  const userName = [
+  const userData = [
     {
-      name: "Sahil",
-      age: "20",
-      email: "khola@gmail.com",
-      id: 1,
+      Name: "Sahil khola",
+      Age: "20",
+      Email: "@gmail.com",
+      Id: 1,
     },
     {
-      name: "karan",
-      age: "29",
-      email: "karan@gmail.com",
-      id: 2,
+      Name: "karan",
+      Age: "22",
+      Email: "karan@gmail.com",
+      Id: 2,
     },
     {
-      name: "sourav",
-      age: "40",
-      email: "sourav@gmail.com",
-      id: 3,
+      Name: "Sourav",
+      Age: "23",
+      Email: "bhupati@gmail.com",
+      Id: 3,
     },
+    {
+      Name: "tanishq",
+      Age: "25",
+      Email: "tanishq@gmail.com",
+      Id: 4,
+    },
+    {
+      Name: "nishu",
+      Age: "20",
+      Email: "nishant@gmail.com",
+      Id: 5,
+    }
   ];
   return (
     <>
-      <h1>Loop in JSX with Map Function</h1>
-      <table border={1}>
+      <h1>Loop in jsx with Map function </h1>
+      <table border={3}>
         <thead>
           <tr>
-            <td>Id</td>
+            <td>ID</td>
             <td>NAME</td>
             <td>AGE</td>
             <td>EMAIL</td>
           </tr>
         </thead>
         <tbody>
-        {
-          userName.map((item)=>(
-            <tr key={item.id}>
-            <td>{item.id}</td>
-            <td>{item.name}</td>
-            <td>{item.age}</td>
-            <td>{item.email}</td>
-            
+         {
+          userData.map((user)=>(
+            <tr key={user.Id}>
+            <td>{user.Id}</td>
+            <td>{user.Name}</td>
+            <td>{user.Age}</td>
+            <td>{user.Email}</td>
           </tr>
           ))
-        }
+         }
         </tbody>
       </table>
 
-
-
-      <h1>Dummy data</h1>
-      <table border={1}>
+      {/* <table border={3}>
         <tr>
-          <th> ID </th>
-          <th> Name </th>
-          <th> Email </th>
-          <th> age </th>
+          <th>ID</th>
+          <th>NAME</th>
+          <th>AGE</th>
+          <th>EMAIL</th>
         </tr>
         <tr>
           <td>1</td>
           <td>Sahil</td>
-          <td>sahil@gmail.com</td>
           <td>20</td>
+          <td>khola@gmail.com</td>
         </tr>
         <tr>
-          <td>2</td>
-          <td>karan</td>
-          <td>karan@gmail.com</td>
-          <td>29</td>
+          <td>1</td>
+          <td>Sahil</td>
+          <td>20</td>
+          <td>khola@gmail.com</td>
         </tr>
         <tr>
-          <td>3</td>
-          <td>sourav</td>
-          <td>sourve@gmail.com</td>
-          <td>40</td>
+          <td>1</td>
+          <td>Sahil</td>
+          <td>20</td>
+          <td>khola@gmail.com</td>
         </tr>
-      </table>
+        <tr>
+          <td>1</td>
+          <td>Sahil</td>
+          <td>20</td>
+          <td>khola@gmail.com</td>
+        </tr>
+      </table> */}
     </>
   );
 }
-
 export default App;

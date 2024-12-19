@@ -1,18 +1,12 @@
-function User({data}) {
+function User({udd}) {
     return(
-        <div style={
-            {
-                border: "2px solid green",
-                padding: "10px",
-                margin:"10px",
-                width:"500px",
-                borderRadius:"10px"
-            }
-        }>
-        <h1>Name : {data.name}</h1>
-        <h1>Age : {data.age}</h1>
-        <h1>Email : {data.email}</h1>
+    <div style={{border:'5px solid black', marginBottom:"4px"}}>
+         <div key={udd.Id}>
+        <h1>Name : {udd.Name}</h1>
+        <h1>Age : {udd.Age}</h1>
+        <h1>Email : {udd.Email}</h1>
         </div>
+    </div>
     )
 }
-export default  User
+export default User;
