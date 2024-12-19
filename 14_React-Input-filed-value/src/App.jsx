@@ -1,62 +1,21 @@
-// import { useState } from 'react'
-
 import { useState } from "react";
 
-
-// function App() {
-//   const [val, setVal] = useState("")
-
-//   return (
-//     <>
-//     <h1>Get Input field Value</h1>
-//     <input type="text" value={val} onChange={(event)=>{setVal(event.target.value)}} placeholder='User Name' />
-//     <h1>{val}</h1>
-//     <button onClick={()=>{setVal("")}}>Clear value</button>
-//     </>
-//   )
-// }
-
-// export default App
-
-
-
-
-
-
-
-
-
-
-
 function App() {
-  const [Name ,setName]=useState("")
-  return(
+  const [name, setName] = useState("");
+  function changeValue(event) {
+    setName(event.target.value)
+  }
+  return (
     <>
-    <h1 >Get Input Field Value </h1>
-    <form action="" method="get">
-    <input type="text" placeholder="Enter Name"  onChange={(event)=>{setName(event.target.value)}}/>
-    <button onClick={()=>{
-      setName("")
-    }}>Clear</button>
-
-    </form>
-    <h5>{Name}</h5>
+      <h1>handel input field</h1>
+      <form action="" method="get">
+        <input type="text" name="" id="" onChange={changeValue} placeholder="Enter Name" />
+      <br />
+      <br />
+      <button>clear</button>
+      </form>
+      <h3>Name :- {name}</h3>
     </>
-  )
+  );
 }
-
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
