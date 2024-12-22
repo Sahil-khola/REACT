@@ -1,33 +1,411 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ const cardStyle = {
+  border:'3px solid black',
+  width: '200px',
+  boxShadow: '5px 5px 5px 5px grey',
+  margin: '10px',
+ }
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+     <h1 style={{color: 'red'}}>Inline CSS in React Js</h1>
+     <div style={{display: 'flex',flexWrap: 'wrap'}}>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{
+        paddingLeft: '2px',
+       margin: '5px',
+      }}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{
+        paddingLeft: '2px',
+       margin: '5px',
+      }}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{
+        paddingLeft: '2px',
+       margin: '5px',
+      }}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{
+        paddingLeft: '2px',
+       margin: '5px',
+      }}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{
+        paddingLeft: '2px',
+       margin: '5px',
+      }}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{ paddingLeft: '2px',margin: '5px',}}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     <div style={cardStyle }>
+      <img src="https://picsum.photos/200" alt="random" />
+      <div
+      style={{
+        paddingLeft: '2px',
+       margin: '5px',
+      }}>
+        <h3>Sahil khola</h3>
+        <p>Software developer</p>
+      </div>
+     </div>
+     </div>
     </>
   )
 }
