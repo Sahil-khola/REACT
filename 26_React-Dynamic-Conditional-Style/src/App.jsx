@@ -252,6 +252,21 @@ function App() {
        <h3>Randam Image</h3>
        <p>This is Random Image</p>
       </div>
+      <div style={style}>
+      <img src="https://picsum.photos/200" alt="random" />
+       <h3>Randam Image</h3>
+       <p>This is Random Image</p>
+      </div>
+      <div style={style}>
+      <img src="https://picsum.photos/200" alt="random" />
+       <h3>Randam Image</h3>
+       <p>This is Random Image</p>
+      </div>
+      <div style={style}>
+      <img src="https://picsum.photos/200" alt="random" />
+       <h3>Randam Image</h3>
+       <p>This is Random Image</p>
+      </div>
     </div>
     </>
   )
