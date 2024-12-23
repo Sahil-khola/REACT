@@ -1,5 +1,7 @@
 // import { useState } from "react";
 
+import { useState } from "react";
+
 // function App() {
 //   const[text, setText] = useState('green')
 //   const[cardStyle, setCardStyle] = useState(
@@ -210,6 +212,48 @@
 // export default App;
 
 function App() {
-  
+  const[style,setStyle]=useState(
+    {
+      border:'3px solid black',
+      width:'200px',
+      boxShadow:'5px 5px 5px 5px grey',
+      margin:'10px'
+    }
+  )
+
+  function changeStyle(bgcolor,color,fontsize) {
+    setStyle({...style,backgroundColor:bgcolor,color:color,fontSize:fontsize})
+  }
+  const[grid,setGrid]=useState(true)
+  return(
+    <>
+    <h1>Conditional and Dynamic Style</h1>
+    <button onClick={()=>{setGrid(!grid)}}>Toggle</button>
+    <button onClick={()=>{changeStyle('grey',"white",'15px')}}>Change Theme</button>
+    <button onClick={()=>{changeStyle('white',"black")}}>Change Theme</button>
+    <div style={{display:grid?'flex':"block"}}>
+      <div style={style}>
+      <img src="https://picsum.photos/200" alt="random" />
+       <h3>Randam Image</h3>
+       <p>This is Random Image</p>
+      </div>
+      <div style={style}>
+      <img src="https://picsum.photos/200" alt="random" />
+       <h3>Randam Image</h3>
+       <p>This is Random Image</p>
+      </div>
+      <div style={style}>
+      <img src="https://picsum.photos/200" alt="random" />
+       <h3>Randam Image</h3>
+       <p>This is Random Image</p>
+      </div>
+      <div style={style}>
+      <img src="https://picsum.photos/200" alt="random" />
+       <h3>Randam Image</h3>
+       <p>This is Random Image</p>
+      </div>
+    </div>
+    </>
+  )
 }
 export default App;
