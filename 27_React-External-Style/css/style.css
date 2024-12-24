@@ -1,0 +1,28 @@
+.heading{
+    color: green;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Arial', sans-serif;
+}
+.img-Style{
+    height: 200px;
+    border-radius: 10px;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(6, 0, 0);
+    width: 200px;
+}
+.text-wrap{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(225, 215, 215);
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
