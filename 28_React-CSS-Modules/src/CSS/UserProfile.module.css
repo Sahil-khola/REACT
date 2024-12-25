@@ -1,0 +1,29 @@
+.heading{
+    color: black;
+    font-size: 20px;
+}
+.main{
+   display: flex;
+   
+
+}
+
+.card{
+     border: 2px solid black;
+     box-shadow: 2px 3px 20px grey;
+     border-radius: 5px;
+     background-color: rgba(0, 0, 0, 0.648);
+     margin: 30px;
+
+}
+
+figure{
+    border: 3px solid black;
+    margin: 10px;
+    border-radius: 8px;
+} 
+figcaption{
+    padding-left: 10px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
