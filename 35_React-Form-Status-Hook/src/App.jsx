@@ -1,18 +1,20 @@
 function App() {
-  async function handelSubmit() {
-   await new Promise((res => setTimeout(res, 2000)));
-   console.log("Form Submitted");
+ 
+  const handelSubmit=()=>{
+    new Promise(res=>setTimeout(res,2000))
   }
-   return (
-     <div>
-       <form onSubmit={handelSubmit}>
-         <input type="text" placeholder="username" />
-         <br /><br />
-         <input type="password" placeholder="password"/>
-         <br /><br />
-         <button>Submit</button>
-       </form>
-     </div>
-   );
- } 
- export default App;
+
+  return (
+    <div>
+      <h1>useFormStatus hook in React js</h1>
+      <form action="handelSubmit">
+        <input type="text" placeholder="Enter Name" />
+        <br /><br />
+        <input type="text" placeholder="Enter Password" />
+        <br /><br />
+        <button>Submit</button>
+      </form>
+    </div>
+  );
+}
+export default App;
