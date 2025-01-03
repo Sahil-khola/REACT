@@ -2,20 +2,20 @@ import { useState } from "react";
 
 function App() {
   const [name, setName] = useState("");
-  function changeValue(event) {
-    setName(event.target.value)
+  function nameGet(event) {
+    setName(event.target.value);
   }
   return (
-    <>
-      <h1>handel input field</h1>
-      <form action="" method="get">
-        <input type="text" name="" id="" onChange={changeValue} placeholder="Enter Name" />
-      <br />
-      <br />
-      <button>clear</button>
+    <div>
+      <form>
+        <h1>Get Input Field</h1>
+        <input type="text" onChange={nameGet} placeholder="Enter your name" />
+        <br />
+        <br />
+        <button type="reset" onClick={()=>{setName("")}}>clear</button> <br />
+        {name}
       </form>
-      <h3>Name :- {name}</h3>
-    </>
+    </div>
   );
 }
 export default App;
