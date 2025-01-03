@@ -1,71 +1,54 @@
-// import { useState } from "react";
-// import { use } from "react";
-
-// function App() {
-//   const [name,setName]=useState("")
-//   const [password,setPassword]=useState(" ")
-//   const [email,setEmail]=useState(" ")
- 
-//   function nameHandel(event) {
-//     setName(event.target.value)    
-//   }
-//   function passHandel(event) {
-//     setName(event.target.value)    
-//   }
-//   function emailHandel(event) {
-//     setName(event.target.value)    
-//   }
- 
-//   return(
-//     <>
-//     <h1> Controlled Component </h1>
-//      <form action="" method="get">
-//       <label htmlFor="name">Name  </label>
-//       <input type="text" name="Fname" id="name" onChange={nameHandel} />
-//       <br />
-//       <br />
-//       <label htmlFor="ps">Password  </label>
-//       <input type="password" name="Fname" id="ps" onChange={passHandel}  />
-//       <br />
-//       <br />
-//       <label htmlFor="em">Email  </label>
-//       <input type="text" name="Fname" id="em" onChange={emailHandel} />
-//       <button >clear</button>
-//      </form>
-//      <h3>{name}</h3>
-//      <h3>{password}</h3>
-//      <h3>{email}</h3>
-//     </>
-//   )
-// }
-// export default App;
 import { useState } from "react";
 
 function App() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
+
   return (
     <>
-      <h1>Controlled Component</h1>
+      <h1>CONTROLED COMPONENT</h1>
       <form action="" method="get">
-        <input type="text"value={name} onChange={(event)=>{setName(event.target.value)}} placeholder="Enter Name" />
+        <input
+          type="text"
+          placeholder="Enter your name"
+          onChange={(event) => {
+            setName(event.target.value);
+          }}
+        />
         <br />
         <br />
-        <input type="password"value={password} onChange={(event)=>{setPassword(event.target.value)}}  placeholder="Enter password" />
+        <input
+          type="email"
+          placeholder="Enter your email"
+          onChange={(event) => {
+            setEmail(event.target.value);
+          }}
+        />
+        <br /> <br />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          onChange={(event) => {
+            setPassword(event.target.value);
+          }}
+        />
         <br />
         <br />
-        <input type="text" value={email} onChange={(event)=>{setEmail(event.target.value)}} placeholder="Enter email" />
-        <br />
-        <br />
-        <button>Submit</button>
-        <button onClick={()=>{setName("");setPassword("");setEmail("")}} > Clear </button>
-        <h1>{name}</h1>
-        <h1>{password}</h1>
-        <h1>{email}</h1>
+        <button
+          type="reset"
+          onClick={() => {
+            setName(""), setEmail(""), setPassword("");
+          }}
+        >
+          Clear
+        </button>
       </form>
+      <p>Name :{name}</p>
+      <p>Email :{email}</p>
+      <p>Password :{password}</p>
     </>
   );
 }
-
 export default App;
+
