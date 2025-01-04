@@ -5,7 +5,7 @@ function App() {
   return (
    <>
     <h1> Handel Check box </h1>
-    <Skills/>
+      <Skills />
    </>
   )
 }

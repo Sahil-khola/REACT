@@ -1,30 +1,38 @@
 import { useState } from "react";
 
 function Skills() {
-  const [val,setVal] = useState([]);
-  function valHandel(event) {
-    console.log((event.target.value,event.target.checked));
+  const [skills, setSkills] = useState([]);
+  function handelSkill(event) {
+    if(event.target.checked){
+      setSkills([...skills, event.target.value]);
+    }else{
+      setSkills([skills.filter((item) => item !== event.target.value)]);
+    }
+
   }
   return (
-    <>
-      <form action="" method="get">
-        <input type="checkbox" name="php" id="php" onChange={valHandel} />
+    <div>
+      <h3>Select Your Skills</h3>
+      <form>
+        <input type="checkbox" id="php" name="php" value="php"  onChange={handelSkill}/>
         <label htmlFor="php">PHP</label>
         <br />
         <br />
-        <input type="checkbox" name="js" id="js" onChange={valHandel}  />
+        <input type="checkbox" id="js" name="js" value="js" onChange={handelSkill} />
         <label htmlFor="js">JS</label>
         <br />
         <br />
-        <input type="checkbox" name="node" id="node" onChange={valHandel}  />
-        <label htmlFor="node">NODE</label>
-        <br />
-        <br />
-        <input type="checkbox" name="java" id="java" onChange={valHandel}  />
+        <input type="checkbox" id="java" name="java" value="java" onChange={handelSkill} />
         <label htmlFor="java">JAVA</label>
+        <br />
+        <br />
+        <input type="checkbox" id="python" name="python" value="python"onChange={handelSkill} />
+        <label htmlFor="python">PYTHON</label>
+        <br />
+        <br />
+        <h1>{skills.toString()}</h1>
       </form>
-      <h1>{val.toString()}</h1>
-    </>
+    </div>
   );
 }
 export default Skills;
