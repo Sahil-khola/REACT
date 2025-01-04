@@ -1,13 +1,11 @@
-import Skills from "./CheckBox"
+import Skills from "./CheckBox";
 
 function App() {
-
   return (
-   <>
-    <h1> Handel Check box </h1>
+    <div>
+      <h1>Handel checkbox </h1>
       <Skills />
-   </>
-  )
+    </div>
+  );
 }
-
-export default App
+export default App;

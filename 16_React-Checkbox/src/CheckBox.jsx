@@ -2,35 +2,27 @@ import { useState } from "react";
 
 function Skills() {
   const [skills, setSkills] = useState([]);
-  function handelSkill(event) {
-    if(event.target.checked){
+  function handelRadio(event) {
+    if (event.target.checked) {
       setSkills([...skills, event.target.value]);
-    }else{
-      setSkills([skills.filter((item) => item !== event.target.value)]);
+    } else {
+      setSkills(skills.filter((skill) => skill !== event.target.value));
     }
-
   }
   return (
     <div>
-      <h3>Select Your Skills</h3>
       <form>
-        <input type="checkbox" id="php" name="php" value="php"  onChange={handelSkill}/>
+        <h1>SELECT SKILLS</h1>
+        <input type="checkbox" name="PHP" id="php" value="php" onChange={handelRadio} />
         <label htmlFor="php">PHP</label>
         <br />
-        <br />
-        <input type="checkbox" id="js" name="js" value="js" onChange={handelSkill} />
-        <label htmlFor="js">JS</label>
-        <br />
-        <br />
-        <input type="checkbox" id="java" name="java" value="java" onChange={handelSkill} />
+        <input type="checkbox" name="java" id="java" value="java" onChange={handelRadio} />
         <label htmlFor="java">JAVA</label>
         <br />
-        <br />
-        <input type="checkbox" id="python" name="python" value="python"onChange={handelSkill} />
+        <input type="checkbox" name="python" id="python" value="python" onChange={handelRadio} />
         <label htmlFor="python">PYTHON</label>
         <br />
-        <br />
-        <h1>{skills.toString()}</h1>
+        <h3>Selected skills : {skills.toString()}</h3>
       </form>
     </div>
   );
