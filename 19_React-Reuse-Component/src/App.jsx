@@ -1,47 +1,37 @@
 import User from "./User";
 
 function App() {
-    const userData = [
-        {
-          Name: "Sahil khola",
-          Age: "20",
-          Email: "@gmail.com",
-          Id: 1,
-        },
-        {
-          Name: "karan",
-          Age: "22",
-          Email: "karan@gmail.com",
-          Id: 2,
-        },
-        {
-          Name: "Sourav",
-          Age: "23",
-          Email: "bhupati@gmail.com",
-          Id: 3,
-        },
-        {
-          Name: "tanishq",
-          Age: "25",
-          Email: "tanishq@gmail.com",
-          Id: 4,
-        },
-        {
-          Name: "nishu",
-          Age: "20",
-          Email: "nishant@gmail.com",
-          Id: 5,
-        }
-      ];
-    return(
-        <>
-        <h1>Reuse Component in react</h1>
-        {
-            userData.map((data)=>(
-                <User udd = {data} />
-            ))
-        }
-        </>
-    )
+  const information = [
+    {
+      name: "John",
+      age: 25,
+      city: "New York",
+      id: 1,
+    },
+    {
+      name: "Jane",
+      age: 30,
+      city: "Los Angeles",
+      id: 2,
+    },
+    {
+      name: "Bob",
+      age: 35,
+      city: "Chicago",
+      id: 3,
+    },
+    {
+      name: "Alice",
+      age: 40,
+      city: "San Francisco",
+      id: 4,
+    },
+  ];
+  return (
+    <div>
+      <h1>REUSE COMPONENT IN REACT JS </h1>
+      <User data={information} />
+    </div>
+  );
 }
 export default App;

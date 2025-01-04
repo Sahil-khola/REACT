@@ -1,97 +1,93 @@
-import { use } from "react";
-
 function App() {
   const userData = [
     {
-      Name: "Sahil khola",
-      Age: "20",
-      Email: "@gmail.com",
-      Id: 1,
+      name: "John",
+      age: 25,
+      city: "New York",
+      id: 1,
     },
     {
-      Name: "karan",
-      Age: "22",
-      Email: "karan@gmail.com",
-      Id: 2,
+      name: "Jane",
+      age: 30,
+      city: "Los Angeles",
+      id: 2,
     },
     {
-      Name: "Sourav",
-      Age: "23",
-      Email: "bhupati@gmail.com",
-      Id: 3,
+      name: "Bob",
+      age: 35,
+      city: "Chicago",
+      id: 3,
     },
     {
-      Name: "tanishq",
-      Age: "25",
-      Email: "tanishq@gmail.com",
-      Id: 4,
+      name: "Alice",
+      age: 40,
+      city: "San Francisco",
+      id: 4,
     },
-    {
-      Name: "nishu",
-      Age: "20",
-      Email: "nishant@gmail.com",
-      Id: 5,
-    }
   ];
   return (
-    <>
-      <h1>Loop in jsx with Map function </h1>
-      <table border={3}>
+    <div>
+      <h1>Loop in JSX with Map Function</h1>
+      <table border="1">
         <thead>
           <tr>
-            <td>ID</td>
-            <td>NAME</td>
-            <td>AGE</td>
-            <td>EMAIL</td>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>CITY</th>
           </tr>
         </thead>
         <tbody>
-         {
-          userData.map((user)=>(
-            <tr key={user.Id}>
-            <td>{user.Id}</td>
-            <td>{user.Name}</td>
-            <td>{user.Age}</td>
-            <td>{user.Email}</td>
-          </tr>
-          ))
-         }
+          {userData.map((userData)=>{
+            return (
+              <tr key={userData.id}>
+                <td>{userData.id}</td>
+                <td>{userData.name}</td>
+                <td>{userData.age}</td>
+                <td>{userData.city}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
 
-      {/* <table border={3}>
-        <tr>
-          <th>ID</th>
-          <th>NAME</th>
-          <th>AGE</th>
-          <th>EMAIL</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Sahil</td>
-          <td>20</td>
-          <td>khola@gmail.com</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Sahil</td>
-          <td>20</td>
-          <td>khola@gmail.com</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Sahil</td>
-          <td>20</td>
-          <td>khola@gmail.com</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Sahil</td>
-          <td>20</td>
-          <td>khola@gmail.com</td>
-        </tr>
+      {/* <table border={1}>
+        <thead>
+         <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+         </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Sahil</td>
+            <td>20</td>
+            <td>Gurugram</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Sahil</td>
+            <td>20</td>
+            <td>Gurugram</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Sahil</td>
+            <td>20</td>
+            <td>Gurugram</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Sahil</td>
+            <td>20</td>
+            <td>Gurugram</td>
+          </tr>
+        </tbody>
       </table> */}
-    </>
+    </div>
   );
 }
 export default App;
