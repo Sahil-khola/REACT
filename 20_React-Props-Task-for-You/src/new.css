@@ -1,0 +1,14 @@
+h1{
+    color: aqua;
+    font-size: larger;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  text-align: center;
+  background-color: blue;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px red;
+  text-decoration-color: aqua;
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+}
